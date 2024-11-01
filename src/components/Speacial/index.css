@@ -1,0 +1,17 @@
+.categories-list div:hover{
+    transition: ease-in-out 0.3s;
+    color: #f22121;
+
+}
+
+.categories-list .item{
+    border: 3px solid #f22121;
+    
+}
+
+.Special-wrapper .wrapper{
+ 
+    
+    
+}
+

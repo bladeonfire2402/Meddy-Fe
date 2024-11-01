@@ -1,10 +1,49 @@
 .header {
     height: 33.6vw;
     margin: 30px auto;
-    background: url('C:/Users/nhatm/Downloads/Đồ án phần mềm/food-dev/front-end/public/header_img.png');
     background-size: contain;
     position: relative;
 }
+
+.Other-navigation .item {
+    position: relative;
+    width: 24%;
+    justify-content: center;
+    background: rgb(0, 74, 255);
+    background: linear-gradient(90deg, rgba(0, 74, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    overflow: hidden; /* Đảm bảo phần tử cha không hiển thị overflow */
+}
+
+.Other-navigation .item::after {
+    position: absolute;
+    height: 100%;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background: rgb(0,74,255);
+    background: linear-gradient(270deg, rgba(0,74,255,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 8px;
+    opacity: 0.2;
+    width: 0; /* Đặt width ban đầu là 0 */
+    transition: width 0.5s ease; /* Thêm transition cho hiệu ứng mượt mà */
+}
+
+.Other-navigation .item:hover::after {
+    animation: left-to-right 1s forwards; /* Chạy animation khi hover */
+}
+
+/* Animation keyframe */
+@keyframes left-to-right {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
 
 .header-contents {
     position: absolute;

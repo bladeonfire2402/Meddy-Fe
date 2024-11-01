@@ -1,0 +1,13 @@
+.Banner-content .Banner-slider{
+    width: 70%;
+}
+
+.Banner-side{
+    width: 29%;
+}
+
+.Banner-content .Banner-side img{
+    flex: 1;
+    border-radius: 8px;
+
+}

@@ -1,0 +1,13 @@
+.grid-pro{
+    grid-template-columns: repeat(2, 1fr); /* 2 cột, mỗi cột chiếm 1 phần */
+  grid-template-rows: repeat(2, auto); /* 2 hàng, tự động điều chỉnh chiều cao */
+  gap: 10px; /* khoảng cách giữa các ô */
+}
+
+.drugstore-img{
+    left: -20px;
+}
+
+.remove-img{
+    right: 0px;
+}

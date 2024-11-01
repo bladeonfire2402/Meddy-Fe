@@ -1,13 +1,23 @@
+
+import { OtherNavigationList } from '../../../public/meddy-assets/meddy-assets'
+import Banner from '../Banner/Banner'
+import TitleText from '../Text/TitleText'
 import './Header.css'
 
 const Header = () => {
   return (
-    <div className='header'>
-      <div className="header-contents">
-        <h2>Order your favorite food here</h2>
-        <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and elevate your dining experience, one delicious meal at a time.</p>
-        <button>View Menu</button>
+    <div className='header-wrapper flex flex-col items-center justify-center'>
+     <div className='wrapper'>
+      <Banner/>
+      <div className='Other-navigation flex justify-between mt-4'>
+        {OtherNavigationList.map((item,index)=>(
+          <div className='flex items-center gap-4 item rounded-lg py-4 cursor-pointer ' key={index}>
+            <img src={item.img} className='w-14'/>
+            <TitleText text={item.title}/>
+          </div>
+        ))}
       </div>
+     </div>
     </div>
   )
 }

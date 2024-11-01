@@ -5,12 +5,114 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Biến mã màu*/
+
+:root {
+  --primary-color: #3498db; /* Màu xanh dương cho primary */
+  --secondary-color: #acdce9;
+  --pastel-blue: #E3F4F8;
+  --all-black: #282828;
+  --golden: #f8a809;
+  --thirdly-color:#519800;
+  --red-color:#f22121;
+  --utral-blue:#004aff;
+}
+
+/* Class mã màu text */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-pastel-blue {
+  color: var(--pastel-blue);
+}
+
+.text-golden {
+  color: var(--golden);
+}
+
+.text-all-black {
+  color: var(--all-black);
+}
+
+.text-thirdly{
+  color: var(--thirdly-color);
+}
+
+.text-red-color{
+  color: var(--red-color);
+}
+
+.text-utra{
+  color: var(--utral-blue);
+}
+
+/* Class mã màu background */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-pastel-blue {
+  background-color: var(--pastel-blue);
+}
+
+.bg-golden {
+  background-color: var(--golden);
+}
+
+.bg-all-black {
+  background-color: var(--all-black);
+}
+
+.bg-thirdly{
+  background-color: var(--thirdly-color);
+}
+
+.bg-red-color{
+  background-color: var(--red-color);
+}
+
+.bg-ultra{
+  background-color: var(--utral-blue);
+}
+
+/* Class về background gradient*/
+.bg-gra-primary-pastel{
+  background: rgb(52,152,219);
+  background: linear-gradient(28deg, rgba(52,152,219,1) 0%, rgba(227,244,248,1) 100%);
+
+}
+
+.bg-grad{
+  background: rgb(242,33,33);
+background: linear-gradient(28deg, rgba(242,33,33,1) 0%, rgba(248,168,9,1) 100%);
+}
+
+
+
+/* Class về độ rộng responsive */
+.wrapper{
+  width: 80%;
+}
+
+.small-wrapper{
+  width: 30%;
+}
+
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Lexend", sans-serif;
   scrollbar-width: smooth;
 }
 body{
@@ -20,10 +122,7 @@ a{
   text-decoration: none;
   color: inherit;
 }
-.app{
-  width: 80%;
-  margin: auto;
-}
+
 
 @keyframes fadeIn {
   0%{

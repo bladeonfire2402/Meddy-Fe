@@ -1,16 +1,19 @@
 import  { useContext } from 'react';
-import './FoodDisplay.css';
+import './index.css'
 import { StoreContext } from '../../context/StoreContext';
 import FoodItem from '../FoodItem/FoodItem';
 
-const FoodDisplay = ({ category }) => {
+const DrugDisplay = ({ category }) => {
   const { food_list } = useContext(StoreContext);
+  
+  let DrugList = food_list
+  const Few= DrugList.splice(0,10)
+  console.log(Few)
 
   return (
     <div className='food-display' id='food-display'>
-      <h2>Top dishes near you</h2>
-      <div className="food-display-list">
-        {food_list.map((item, index) => {
+      <div className="food-display-list ">
+        {Few.map((item, index) => {
           if(category==="All" || category===item.category){
             return (
               <FoodItem
@@ -29,4 +32,4 @@ const FoodDisplay = ({ category }) => {
   );
 };
 
-export default FoodDisplay;
+export default DrugDisplay;

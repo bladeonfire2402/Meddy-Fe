@@ -1,30 +1,27 @@
 import { useContext, useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../../public/assets/assets'
+import Logo from '/meddy-assets/main-assets/logo.png'
 import { Link } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({setShowLogin}) => {
-
-
-    const[menu,setMenu] = useState("menu");
+    const[menu,setMenu] = useState("home");
   
     const{getTotalCartAmount} = useContext(StoreContext);
 
 
     return (
-    <div className='navbar'>
-      <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>    
-
-      <ul className="navbar-menu">
-        <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Home</Link>
+    <div className='flex justify-center shadow-md mb-3'>
+    <div className='navbar wrapper'>
+      <Link to='/'><img src={Logo} alt="" className="logo" /></Link>    
+      <div className="navbar-menu text-primary">
+        <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Trang chủ</Link>
         <Link to="/about" onClick={()=>setMenu("about")} className={menu==="about"?"active":""}>Về Meddy</Link>
         <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"active":""}>Sản phẩm</Link>
-
-        <a href='#explore-menu' onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>Sản phẩm</a>
         <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</a>
-        <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contact Us</a>
-      </ul>
+        <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Liên hệ </a>
+      </div>
       
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
@@ -34,6 +31,7 @@ const Navbar = ({setShowLogin}) => {
         </div>
         <button onClick={()=>setShowLogin(true)}>Sign In</button>
       </div>
+    </div>        
     </div>
   )
 }

@@ -1,6 +1,5 @@
 .explore-menu{
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 .explore-menu h1{
@@ -13,7 +12,7 @@
 }
 .explore-menu-list {
     display: flex;
-    justify-content: flex-start; /* Align items to start */
+    justify-content: space-between; /* Align items to start */
     align-items: center;
     gap: 30px;
     text-align: center;

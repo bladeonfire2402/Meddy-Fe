@@ -1,4 +1,12 @@
+import { useState } from "react";
+import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
+
 const ShopPages = () =>{
-   return<div></div> 
+   const [category,setCategory] = useState("All");
+   return<div>
+      <ExploreMenu category={category} setCategory={setCategory}/>
+      <FoodDisplay category={category}/>
+   </div> 
 }
 export default ShopPages
