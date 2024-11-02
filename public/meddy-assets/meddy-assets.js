@@ -3,6 +3,7 @@ import Banner1 from '/meddy-assets/slider/banner1.png'; // Absolute path
 import Banner2 from '/meddy-assets/slider/banner2.png'; // Absolute path
 import Banner3 from '/meddy-assets/slider/banner3.png'; // Absolute path
 import Banner4 from '/meddy-assets/slider/banner4.png'; // Absolute path
+import Man from '/meddy-assets/man.png';
 import BuyMedicine from '/meddy-assets/other-navigation-assets/buymedicine.png'
 import Test from '/meddy-assets/other-navigation-assets/test.png'
 import Advice from '/meddy-assets/other-navigation-assets/tuvan.png'
@@ -11,12 +12,32 @@ import VaccinesIcon from '@mui/icons-material/Vaccines';
 import HealingIcon from '@mui/icons-material/Healing';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-
+import shield from '/meddy-assets/illustrator/shield.png'
+import acneBlue from '/meddy-assets/illustrator/acne-blue-light-therapy.png'
+import med from '/meddy-assets/illustrator/med.png'
+import med2 from '/meddy-assets/illustrator/med2.png'
+import medical from '/meddy-assets/illustrator/medical.png'
+import a from '/meddy-assets/illustrator/a.jpg'
+import b from '/meddy-assets/illustrator/b.jpg'
+import c from '/meddy-assets/illustrator/c.jpg'
+import liver from '/meddy-assets/illustrator/liver.jpg'
+import brain from '/meddy-assets/illustrator/brain.jpg'
+import stomach from '/meddy-assets/illustrator/stomach.jpg'
 import WaterDropIcon from '@mui/icons-material/WaterDrop';
+import { Person } from '@mui/icons-material';
+
+
 
 export const MeddyAssets = [
     MeddyLogo,
+    
+    
 ];
+
+export const OtherIcon={
+    Person,
+    Man,
+}
 
 export const BannerList = [
     Banner1,
@@ -93,4 +114,62 @@ export const DrugStoreLocationList=[
         location:"Bình Dương",
         quantity:3
     }
+]
+
+export const DoctorList=[
+    {
+        id:1,
+        name:"Phạm Đình Liêm",
+        major:"Truyền nhiễm",
+        eductation:"Thạc sĩ"
+    },
+    {
+        id:2,
+        name:"Nguyễn Đức An",
+        major:"Sản phụ khoa",
+        eductation:"Tiến sĩ"
+    },
+    {
+        id:3,
+        name:"Nguyễn Nhất Minh",
+        major:"Tim mạch",
+        eductation:"Giáo sư"
+    },
+    {
+        id:4,
+        name:"Đặng Bá Nhất",
+        major:"Y học cố truyền",
+        eductation:"Cu Li"
+    },
+]
+
+export const MeddyAssetsIllustrator={
+    shield,
+    acneBlue,
+    med,
+    med2,
+    medical,
+    a,
+    b,
+    c,
+    liver,
+    brain,
+    stomach
+
+}
+
+export const MedicalTest=[
+    {
+        type:"Kiểm tra nguy cơ mắc bệnh về thận",
+        img:liver
+    },
+    {
+        type:"Kiểm tra nguy cơ mắc bệnh Alzheimer",
+        img:brain
+    },
+    {
+        type:"Kiểm tra nguy cơ mắc trào ngược dạ dày    ",
+        img:stomach
+    },
+
 ]

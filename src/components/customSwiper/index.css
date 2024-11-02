@@ -1,0 +1,39 @@
+.swiper-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.swiper-container img{
+    width: 100px;
+}
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff; /* Button background color */
+    color: #007aff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    border: 1px solid #007aff;
+
+}
+
+.custom-prev {
+    left: -20px;
+}
+
+.custom-next {
+    right: -20px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    width: 45px;
+    height: 45px;
+    transition: ease-in-out 0.2s;
+}

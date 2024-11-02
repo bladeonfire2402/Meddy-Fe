@@ -1,0 +1,16 @@
+.enormouse{
+    width: 500px;
+    height: 500px;
+}
+
+.bor{
+    border: 20px solid;
+}
+
+.-rotate--30{
+    rotate: 30deg;
+}
+
+.-rotate--35{
+    rotate: -35deg;
+}

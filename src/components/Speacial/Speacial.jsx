@@ -1,7 +1,7 @@
 
 
-import { CategoriesList } from '../../../public/meddy-assets/meddy-assets';
-import ContentText from '../Text/ContentText';
+import { CategoriesList, MeddyAssets,  } from '../../../public/meddy-assets/meddy-assets';
+
 import HeadLineText from '../Text/HeadlLine'
 import StarsIcon from '@mui/icons-material/Stars';
 import TitleText from '../Text/TitleText';
@@ -48,10 +48,11 @@ const Speacial=()=>{
                      <HeadLineText text={"Sản phẩm nổi bật"}/>    
                      </div>
                   </div>
+                  <DrugDisplay category={"All"}/>
+                  </div>
+                 <div>
                </div>
-               <div>
-                <DrugDisplay category={"All"}/>
-               </div>
+               
 
             </div>
 

@@ -96,6 +96,24 @@
 background: linear-gradient(28deg, rgba(242,33,33,1) 0%, rgba(248,168,9,1) 100%);
 }
 
+.bg-grad-pastel-utra{
+  background: rgb(172,220,233);
+  background: linear-gradient(28deg, var(--primary-color) 0%, rgba(0,74,255,1) 100%);
+  
+}
+
+.bg-grad-ultra-thirdly{
+  background: rgb(0,74,255);
+background: linear-gradient(28deg, rgba(0,74,255,1) 0%, rgba(81,152,0,1) 100%);
+
+}
+
+.bg-grad-secondary-utra{
+  background: rgb(0,74,255);
+background: linear-gradient(90deg, rgba(0,74,255,1) 0%, rgba(172,220,233,1) 100%);
+}
+
+
 
 
 /* Class về độ rộng responsive */
@@ -107,6 +125,10 @@ background: linear-gradient(28deg, rgba(242,33,33,1) 0%, rgba(248,168,9,1) 100%)
   width: 30%;
 }
 
+/*Class điều chỉnh cho position*/
+.translateY--50per{
+  transform: translateY(-50%);
+}
 
 *{
   padding: 0;

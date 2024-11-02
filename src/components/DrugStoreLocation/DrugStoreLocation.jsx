@@ -1,4 +1,5 @@
-import { DrugStoreLocationList } from "../../../public/meddy-assets/meddy-assets"
+import { DrugStoreLocationList, MeddyAssetsIllustrator } from "../../../public/meddy-assets/meddy-assets"
+import { RoundedBludeRadiatnt, RoundedBludeRadiatntBig, RoundedBludeRadiatntEnormous, RoundedBludeRadiatntWithItem, RoundedBludeRadiatntWithItemVer2, RoundedBludeRadiatntWithItemVer3 } from "../Rounded"
 import './index.css'
 
 
@@ -10,8 +11,8 @@ const DrugStoreLocation = ()=>{
     const FithItem=DrugStoreLocationList[4]
     
     return(
-        <div className="flex justify-center py-3 mt-6 bg-pastel-blue relative">
-            <div className="wrapper px-6 py-5 mb-5 bg-white rounded-md mt-5">
+        <div className=" flex justify-center py-4 mt-6 bg-blue-500 relative">
+            <div className="wrapper Drugstore-wrapper  z-10 px-7 py-7 mb-5 bg-white rounded-md mt-5">
                 <h3 className="text-2xl font-medium text-primary mb-4">Nhà thuốc theo khu vực</h3>
                 <div className="flex gap-3 mb-7">
                 {DrugStoreLocationList.map((item,index)=>(
@@ -51,8 +52,20 @@ const DrugStoreLocation = ()=>{
 
                 </div>
             </div>
-            <img className="absolute drugstore-img z-0 bottom-0" src="/meddy-assets/drugstore.png"/>
-            <img className="absolute remove-img  top-0" src="/meddy-assets/remove.png"/>
+            <div className="absolute right-0 top-1/2 translateY--50per">
+             <RoundedBludeRadiatntWithItemVer2 item={MeddyAssetsIllustrator.b}/>
+            </div>
+
+            <div className="absolute shape-2">
+              <RoundedBludeRadiatntWithItem item={MeddyAssetsIllustrator.a}/>
+            </div>
+
+            <div className="absolute shape">
+              <RoundedBludeRadiatntWithItemVer3 item={MeddyAssetsIllustrator.c}/>
+            </div>
+            
+    
+           
 
         </div>
     )
