@@ -6,14 +6,16 @@ import AppDownload from '../../components/AppDownload/AppDownload'
 import Speacial from '../../components/Speacial/Speacial'
 import DrugStoreLocation from '../../components/DrugStoreLocation/DrugStoreLocation'
 import HealthScreen from '../../components/Health/Health'
+import DrugByPerson from '../../components/DrugByPerson/DrugByPerson'
 
 const Home = () => {
   
   return (
     <div>
       <Header/>
-      <Speacial/>
+      <DrugByPerson/>
       <HealthScreen/>
+      <Speacial/>
       <DrugStoreLocation/>
       <AppDownload />
     </div>

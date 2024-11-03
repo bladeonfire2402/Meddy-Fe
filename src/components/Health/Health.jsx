@@ -54,6 +54,7 @@ export const MedicalTestSection=()=>{
             </div>
             <img className="absolute right-0 bottom-0" src={MeddyAssetsIllustrator.med2}/>
             <img className="absolute right-36 bottom-24" src={MeddyAssetsIllustrator.med}/>
+            <img className="absolute right-60 top-1/2 size-28" src={MeddyAssetsIllustrator.shield}/>
 
         </div>
     )

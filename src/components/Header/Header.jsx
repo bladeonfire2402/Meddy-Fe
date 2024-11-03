@@ -6,7 +6,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className='header-wrapper flex flex-col items-center justify-center'>
+    <div className='header-wrapper flex flex-col items-center justify-center py-4'>
      <div className='wrapper'>
       <Banner/>
       <div className='Other-navigation flex justify-between mt-4'>

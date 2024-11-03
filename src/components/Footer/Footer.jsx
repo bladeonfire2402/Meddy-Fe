@@ -1,14 +1,15 @@
-import React from 'react'
+
 import './Footer.css'
 import { assets } from '../../../public/assets/assets'
+import { MeddyAssets } from '../../../public/meddy-assets/meddy-assets'
 const Footer = () => {
     return (
         <div className='footer' id='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
-                   <img src={assets.logo} alt="" />
+                   <img src={MeddyAssets[0]} className='w-64' alt="" />
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores laboriosam dolores impedit molestiae ex odit voluptatum, velit asperiores deleniti, alias doloremque temporibus autem veritatis natus, veniam totam est nobis.</p>
-                    <div className="footer-social-icon">
+                    <div className="footer-social-icon flex">
                         <img src={assets.facebook_icon} alt="" />
                        <img src={assets.twitter_icon} alt="" />
                        <img src={assets.linkedin_icon} alt="" />
@@ -16,11 +17,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-content-center">
                    <h2>COMPANY</h2>
-                   <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Delivery</li>
-                    <li>Privacy policy</li>
+                   <ul className=''>
+                    <li>Trang chủ</li>
+                    <li>Về Meddy</li>
+                    <li>Đơn hàng</li>
+                    <li>Chính sách</li>
                    </ul>
                 </div>
                 <div className="footer-content-right">
