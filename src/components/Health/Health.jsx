@@ -4,7 +4,7 @@ import doctorImg from '/meddy-assets/other/doctor.png'
 
 const HealthScreen = ()=>{
     return(
-        <div className="Health-section flex justify-center bg-blue-50 py-8">
+        <div className="Health-section bg-blue-300 flex justify-center bg- py-10">
             <div className="wrapper">
                 <div className="Health-Diese ">
                     <HealthDiease/>

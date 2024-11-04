@@ -9,7 +9,7 @@ import { TrundeText100 } from "../../func/trundelText";
 const NewsSection=()=>{
     const firstNewItem=newsList[0]
     return(
-        <div className="News-wrapper flex justify-center py-8 cursor-pointer bg-blue-100 mt-0.5">
+        <div className="News-wrapper flex justify-center py-10 cursor-pointer bg-blue-100 mt-0.5">
             <div className="px-6 py-6 rounded-md wrapper bg-white">
                 <div className="flex gap-2 items-center text-primary">
                     <MedicationLiquidIcon fontSize="large"/>

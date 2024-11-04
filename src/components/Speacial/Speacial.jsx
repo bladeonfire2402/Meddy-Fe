@@ -11,14 +11,14 @@ import DrugDisplay from '../DrugDisplay/DrugDisplay';
 
 const Speacial=()=>{
     return(
-        <div className="Special-wrapper  flex justify-center py-8 cursor-pointer bg-slate-50 mt-0.5">
-            <div className="wrapper bg-primary px-6 py-6 rounded-md">
+        <div className="Special-wrapper  flex justify-center py-10 cursor-pointer bg-slate-100 mt-0.5">
+            <div className="wrapper bg-orange-500 px-6 py-6 rounded-md">
                 <div className='bg-white relative px-7 py-3 rounded-md'>
                   <div className='flex items-center gap-2 mt-4 mb-7'>
-                   <div className='text-orange-500'>
+                   <div className='text-red-color'>
                       <StarsIcon className='w-7'/>
                    </div>
-                    <div className='text-orange-500'>
+                    <div className='text-red-color'>
                      <HeadLineText text={"Danh mục nổi bật"}/>    
                      </div>
                   </div>
@@ -41,10 +41,10 @@ const Speacial=()=>{
 
                <div className='bg-white relative px-7 py-3 mt-7 rounded-md'>
                 <div className='flex items-center gap-2 mt-4 mb-7'>
-                   <div className='text-orange-500'>
+                   <div className='text-red-color'>
                       <LocalFireDepartmentIcon className='w-7' fontSize='large'/>
                    </div>
-                    <div className='text-orange-500'>
+                    <div className='text-red-color'>
                      <HeadLineText text={"Sản phẩm nổi bật"}/>    
                      </div>
                   </div>

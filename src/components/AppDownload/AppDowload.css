@@ -4,6 +4,7 @@
     font-size: max(3vw,20px);
     text-align: center;
     font-weight: 500;
+    margin-bottom: 100px;
 }
 .app-download-plantforms{
     display: flex;

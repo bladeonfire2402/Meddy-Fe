@@ -14,7 +14,7 @@ const PrescriptionPage=()=>{
   };
     
     return(
-        <div className="flex justify-center bg-slate-100">
+        <div className="flex justify-center bg-slate-100 h-full pb-20">
             <div className="wrapper py-5 ">
                 <h1 className="font-semibold text-3xl text-primary mt-4">Đặt thuốc theo đơn</h1>
                 <div className="bg-white flex rounded-md mt-5 gap-4 py-6">

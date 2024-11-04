@@ -102,9 +102,24 @@ background: linear-gradient(28deg, rgba(242,33,33,1) 0%, rgba(248,168,9,1) 100%)
   
 }
 
+.bg-grad-thirdly-pastel{
+  background: rgb(81,152,0);
+background: linear-gradient(90deg, rgba(81,152,0,1) 0%, rgba(172,220,233,1) 100%);
+}
+
 .bg-grad-ultra-thirdly{
   background: rgb(0,74,255);
 background: linear-gradient(28deg, rgba(0,74,255,1) 0%, rgba(81,152,0,1) 100%);
+
+}
+
+.bg-grad-utral-green{
+
+
+}
+
+.bg-grad-ver2{
+  background: #6bccec  ;
 
 }
 
