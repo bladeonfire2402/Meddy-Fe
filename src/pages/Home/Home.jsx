@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './Home.css'
 import Header from '../../components/Header/Header'
 
@@ -7,6 +7,7 @@ import Speacial from '../../components/Speacial/Speacial'
 import DrugStoreLocation from '../../components/DrugStoreLocation/DrugStoreLocation'
 import HealthScreen from '../../components/Health/Health'
 import DrugByPerson from '../../components/DrugByPerson/DrugByPerson'
+import NewsSection from '../../components/News/News'
 
 const Home = () => {
   
@@ -16,6 +17,7 @@ const Home = () => {
       <DrugByPerson/>
       <HealthScreen/>
       <Speacial/>
+      <NewsSection/>
       <DrugStoreLocation/>
       <AppDownload />
     </div>

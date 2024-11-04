@@ -22,7 +22,7 @@ export default HealthScreen
 
 export const HealthDiease=()=>{
     return(
-        <div className="px-6 py-8 bg-grad-pastel-utra rounded-md relative overflow-hidden">
+        <div className="px-6 py-8 bg-grad-pastel-utra rounded-md relative overflow-hidden mt-0.5">
             <h1 className="text-3xl font-semibold text-white mb-2">Chuyên trang bệnh và sức khỏe</h1>
             <p className="text-xl text-white ">Tổng hợp thông tin và kiến thức chuyên sâu về các lĩnh vực sức khỏe</p>
             <button className="bg-white px-3 py-2 rounded-lg text-primary text-xl mt-7 mb-8">Tìm hiểu thêm</button>
@@ -54,7 +54,7 @@ export const MedicalTestSection=()=>{
             </div>
             <img className="absolute right-0 bottom-0" src={MeddyAssetsIllustrator.med2}/>
             <img className="absolute right-36 bottom-24" src={MeddyAssetsIllustrator.med}/>
-            <img className="absolute right-60 top-1/2 size-28" src={MeddyAssetsIllustrator.shield}/>
+         
 
         </div>
     )

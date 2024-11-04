@@ -3,8 +3,9 @@ import ContentText from '../Text/ContentText';
 import HeadLineText from '../Text/HeadlLine';
 import { AccountBox, Check, Person } from '@mui/icons-material';
 import ProductLine from '../Product-Line/ProductLine';
-import ProductItemVer1 from '../ProductItem/ProductItemVer1';
+import Doctorimg from '/public/meddy-assets/other/doctor2.png'
 import { food_list } from '../../../public/assets/assets';
+import { MeddyAssetsIllustrator } from '../../../public/meddy-assets/meddy-assets';
 
 function DrugByPerson() {
   const [products, setProducts] = useState([]);  // Lưu trữ dữ liệu sản phẩm
@@ -43,12 +44,14 @@ function DrugByPerson() {
   const ProductMoi=food_list.slice(0,10)
 
   return (
-    <div className='flex justify-center flex-col items-center py-7  bg-gray-50'>
-        <div className='wrapper px-5 bg-blue-100 py-6 rounded-md'>
-            <div className='flex gap-2 items-center text-blue-900'>
+    <div className='flex justify-center flex-col bg-slate-50 items-center py-7 relative'>
+        <div className='wrapper px-5 bg-blue-100 py-6 rounded-md relative'>
+            <div className='flex gap-2 items-center text-blue-900 '>
                 <Person fontSize='large'/>
                <HeadLineText text={"Sản phẩm theo đối tượng"}/>
             </div>
+            <div className='absolute right-5 bottom-0'><img className='w-72' src={Doctorimg}/></div>
+         
             <div className='flex gap-3 mt-6 cursor-pointer'>
                 {PersonList.map((item,index)=>(
                     <div className='person-item flex gap-2 border-2 px-4 py-2 bg-white rounded-2xl border-blue-500 overflow-hidden relative'
@@ -64,6 +67,18 @@ function DrugByPerson() {
         <div className='wrapper'>
               <ProductLine item={ProductMoi}/>
         </div>
+        <div className='absolute size-16 top-2 rotate-12 right-6'><img src={MeddyAssetsIllustrator.cross}/></div>
+        <div className='absolute size-7 top-24 rotate-12 right-3'><img src={MeddyAssetsIllustrator.cross}/></div>
+        <div className='absolute size-24 top-28 rotate-45 right-20'><img src={MeddyAssetsIllustrator.cross1}/></div>
+        <div className='absolute size-24 top-24 rotate-12 left-20'><img src={MeddyAssetsIllustrator.cross3}/></div>
+        <div className='absolute size-14 top-2 -rotate-12 left-5'><img src={MeddyAssetsIllustrator.cross}/></div>
+        <div className='absolute size-64 top-60 rotate-12 -left-11'><img src={MeddyAssetsIllustrator.heart}/></div>
+        <div className='absolute size-16 bottom-6 rotate-45 left-2'><img src={MeddyAssetsIllustrator.cross1}/></div>
+        <div className='absolute size-24 bottom-28 -rotate-12 left-24'><img src={MeddyAssetsIllustrator.cross2}/></div>
+        <div className='absolute size-7 bottom-52 rotate-45 left-2'><img src={MeddyAssetsIllustrator.cross3}/></div>
+        <div className='absolute size-16 bottom-6 -rotate-12 right-2'><img src={MeddyAssetsIllustrator.heart}/></div>
+        <div className='absolute size-12 bottom-20 rotate-12 right-28'><img src={MeddyAssetsIllustrator.cross}/></div>
+        <div className='absolute size-32 bottom-40 -rotate-45 right-10'><img src={MeddyAssetsIllustrator.cross2}/></div>
       
     </div>
   );

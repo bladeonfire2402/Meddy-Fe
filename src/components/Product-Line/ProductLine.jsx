@@ -4,7 +4,7 @@ import './index.css'
 
 const ProductLine=({item})=>{
     return(
-        <div className="ProductLine-wrapper bg-primary px-5 py-5 rounded-md">
+        <div className="ProductLine-wrapper bg-blue-400 px-5 py-5 rounded-md">
             {item.map((item,index)=>(
                 <ProductItemVer1 key={index} item={item}/>
             ))}

@@ -23,6 +23,13 @@ import c from '/meddy-assets/illustrator/c.jpg'
 import liver from '/meddy-assets/illustrator/liver.jpg'
 import brain from '/meddy-assets/illustrator/brain.jpg'
 import stomach from '/meddy-assets/illustrator/stomach.jpg'
+import cross from '/meddy-assets/illustrator/cross1.png'
+import cross1 from '/meddy-assets/illustrator/cross2.png'
+import cross2 from '/meddy-assets/illustrator/cross3.png'
+import cross3 from '/meddy-assets/illustrator/cross4.png'
+import heart from '/meddy-assets/illustrator/heart.png'
+import MeddyLogoVer2 from '/meddy-assets/main-assets/Logoweb.png'
+
 import WaterDropIcon from '@mui/icons-material/WaterDrop';
 import { Person } from '@mui/icons-material';
 
@@ -30,6 +37,7 @@ import { Person } from '@mui/icons-material';
 
 export const MeddyAssets = [
     MeddyLogo,
+    MeddyLogoVer2
     
     
 ];
@@ -154,7 +162,12 @@ export const MeddyAssetsIllustrator={
     c,
     liver,
     brain,
-    stomach
+    stomach,
+    cross,
+    cross1,
+    cross2,
+    cross3,
+    heart
 
 }
 

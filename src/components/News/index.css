@@ -1,0 +1,33 @@
+.bright-hover {
+    transition: ease-in 0.3s; /* Chuyển tiếp cho hiệu ứng */
+    position: relative; /* Đặt vị trí tương đối để hỗ trợ hiệu ứng */
+}
+
+.bright-hover:hover {
+    filter: brightness(50%); /* Áp dụng hiệu ứng brightness cho phần tử cha khi hover */
+}
+
+.bright-hover h1 {
+    position: relative; /* Đảm bảo h1 có vị trí tương đối */
+    z-index: 1; /* Đảm bảo h1 nằm trên cùng so với hiệu ứng brightness */
+    filter: brightness(100%); /* Đảm bảo h1 luôn sáng */
+}
+
+/* Nếu bạn muốn thêm hiệu ứng vào button */
+.bright-hover button {
+    position: relative; /* Đặt vị trí tương đối cho button */
+    z-index: 1; /* Đảm bảo button nằm trên cùng */
+}
+
+/* Các lớp khác */
+.grid-moi {
+    grid-template-rows: repeat(4, 1fr); /* Tạo 4 hàng với chiều cao bằng nhau */
+}
+
+.news-item {
+    width: calc(100% / 4 - 25px); /* Chia chiều rộng cho 4 cột, trừ 25px */
+}
+
+.frist-news {
+    /* Có thể thêm kiểu dáng cho .frist-news ở đây */
+}

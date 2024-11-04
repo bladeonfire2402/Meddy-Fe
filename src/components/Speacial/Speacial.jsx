@@ -11,21 +11,21 @@ import DrugDisplay from '../DrugDisplay/DrugDisplay';
 
 const Speacial=()=>{
     return(
-        <div className="Special-wrapper  flex justify-center mt-4 cursor-pointer">
-            <div className="wrapper bg-grad px-6 py-6 rounded-md">
+        <div className="Special-wrapper  flex justify-center py-8 cursor-pointer bg-slate-50 mt-0.5">
+            <div className="wrapper bg-primary px-6 py-6 rounded-md">
                 <div className='bg-white relative px-7 py-3 rounded-md'>
                   <div className='flex items-center gap-2 mt-4 mb-7'>
-                   <div className='text-red-color'>
+                   <div className='text-orange-500'>
                       <StarsIcon className='w-7'/>
                    </div>
-                    <div className='text-red-color'>
+                    <div className='text-orange-500'>
                      <HeadLineText text={"Danh mục nổi bật"}/>    
                      </div>
                   </div>
-                  <div className='categories-list flex justify-between items-center gap-7 mt-4 mb-8 '>
+                  <div className='categories-list flex justify-between items-center gap-7 mt-4 mb-8 text-orange-500 '>
                 {CategoriesList.map((item, index)=>(
                     <div className='item flex-1 flex flex-col  items-center text-center justify-center py-8 rounded-md px-5 h-32' key={index}>
-                        <div className='text-red-color mb-3'>
+                        <div className='text-orange-500 mb-3'>
                          <item.img className='' fontSize='large'/>
                         </div>
                         <TitleText text={item.categoriesTitle}/>
@@ -34,17 +34,17 @@ const Speacial=()=>{
                 </div>
                
                 <div className='flex justify-center mb-6'>
-                 <button className='px-9 py-2 bg-red-500 rounded-md text-white'>Xem thêm</button>
+                 <button className='px-9 py-2 bg-orange-500 rounded-md text-white'>Xem thêm</button>
 
                 </div>
                </div>
 
                <div className='bg-white relative px-7 py-3 mt-7 rounded-md'>
                 <div className='flex items-center gap-2 mt-4 mb-7'>
-                   <div className='text-red-color'>
+                   <div className='text-orange-500'>
                       <LocalFireDepartmentIcon className='w-7' fontSize='large'/>
                    </div>
-                    <div className='text-red-color'>
+                    <div className='text-orange-500'>
                      <HeadLineText text={"Sản phẩm nổi bật"}/>    
                      </div>
                   </div>

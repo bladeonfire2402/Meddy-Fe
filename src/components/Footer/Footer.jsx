@@ -4,10 +4,10 @@ import { assets } from '../../../public/assets/assets'
 import { MeddyAssets } from '../../../public/meddy-assets/meddy-assets'
 const Footer = () => {
     return (
-        <div className='footer' id='footer'>
+        <div className='footer bg-primary' id='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
-                   <img src={MeddyAssets[0]} className='w-64' alt="" />
+                   <img src={MeddyAssets[1]} className='w-64' alt="" />
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores laboriosam dolores impedit molestiae ex odit voluptatum, velit asperiores deleniti, alias doloremque temporibus autem veritatis natus, veniam totam est nobis.</p>
                     <div className="footer-social-icon flex">
                         <img src={assets.facebook_icon} alt="" />
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <hr />
             <p className="footer-copyright">
-                Copyright 2024 © Tomato.vercel.com - All Right Reserved.
+                Copyright 2024 © Meddy.com - All Right Reserved.
             </p>
         </div>
     )
