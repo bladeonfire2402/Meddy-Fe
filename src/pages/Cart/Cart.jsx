@@ -1,19 +1,35 @@
 import { useContext } from 'react';
 import './Cart.css';
 import { StoreContext } from '../../context/StoreContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
 
   const navigate = useNavigate();
+  
+  const totalPrice=getTotalCartAmount()
+  
 
-  if (!cartItems) {
-    return <div>Cart is empty</div>;
+  if (totalPrice<=0) {
+    return <div className='flex justify-center'>
+      <div className='wrapper flex justify-center flex-col items-center'>
+        <img src='https://nhathuoclongchau.com.vn/estore-images/cart/illustration-cart-empty.png' className='w-1/3'/>
+        <h1 className='font-semibold text-xl'>Chưa có sản phẩm nào trong giỏ hàng</h1>
+        <p className='text-center font-light text-gray-500'>Cùng khám phá hàng ngàn sản phẩm <br/> tại Nhà thuốc Meddy nhé</p>
+        <Link to={"/shop"}>
+        <button className='px-5 py-2 text-white bg-blue-600 mt-5 rounded-3xl'>Khám phá ngay</button>
+        </Link>
+        <div className='w-full mt-5'>
+          <h1 className='font-semibold text-xl'>Sản phẩm vừa xem</h1>
+        </div>
+      </div>
+    </div>;
   }
 
   return (
-    <div className='cart'>
+    <div className='cart flex justify-center'>
+      <div className='wrapper'>
       <div className="cart-items">
         <div className="cart-items-title">
           <p>Items</p>
@@ -72,6 +88,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

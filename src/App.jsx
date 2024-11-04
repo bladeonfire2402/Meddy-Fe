@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import LoginPopUp from './components/LoginPopUp/LoginPopUp'
 import AboutPages from './pages/About/About'
 import ShopPages from './pages/Shop'
+import PrescriptionPage from './pages/Prescription/Perscription'
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/order' element={<PlaceOder />} />
           <Route path='/about' element={<AboutPages/>}/>
           <Route path='/shop' element={<ShopPages/>}/>
+          <Route path='/prescription' element={<PrescriptionPage/>}/>
 
         </Routes>
       </div>

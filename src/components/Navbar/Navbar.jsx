@@ -12,13 +12,14 @@ const Navbar = ({setShowLogin}) => {
 
 
     return (
-    <div className='flex justify-center shadow-md mb-3'>
+    <div className='flex justify-center shadow-md'>
     <div className='navbar wrapper'>
       <Link to='/'><img src={Logo} alt="" className="logo" /></Link>    
       <div className="navbar-menu text-primary">
         <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Trang chủ</Link>
         <Link to="/about" onClick={()=>setMenu("about")} className={menu==="about"?"active":""}>Về Meddy</Link>
         <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"active":""}>Sản phẩm</Link>
+        <Link to="/prescription" onClick={()=>{setMenu("")}} className={menu===""?"active":""}>Đơn thuốc</Link>
         <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</a>
         <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Liên hệ </a>
       </div>
