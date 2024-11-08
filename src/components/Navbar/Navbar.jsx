@@ -9,8 +9,6 @@ const Navbar = ({setShowLogin}) => {
     const[menu,setMenu] = useState("home");
   
     const{getTotalCartAmount} = useContext(StoreContext);
-
-
     return (
     <div className='flex justify-center shadow-md'>
     <div className='navbar wrapper'>

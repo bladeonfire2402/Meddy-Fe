@@ -1,15 +1,16 @@
-
-
-import { CategoriesList, MeddyAssets,  } from '../../../public/meddy-assets/meddy-assets';
-
+import { CategoriesList,  } from '../../../public/meddy-assets/meddy-assets';
 import HeadLineText from '../Text/HeadlLine'
 import StarsIcon from '@mui/icons-material/Stars';
 import TitleText from '../Text/TitleText';
 import './index.css'
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import DrugDisplay from '../DrugDisplay/DrugDisplay';
+import { useState } from 'react';
+
 
 const Speacial=()=>{
+   const [category,setCategory] = useState("All");
+    
     return(
         <div className="Special-wrapper  flex justify-center py-10 cursor-pointer bg-slate-100 mt-0.5">
             <div className="wrapper bg-orange-500 px-6 py-6 rounded-md">
@@ -48,7 +49,7 @@ const Speacial=()=>{
                      <HeadLineText text={"Sản phẩm nổi bật"}/>    
                      </div>
                   </div>
-                  <DrugDisplay category={"All"}/>
+                     <DrugDisplay category={category}/>
                   </div>
                  <div>
                </div>

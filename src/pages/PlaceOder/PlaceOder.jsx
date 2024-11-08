@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import './PlaceOder.css'
 import { StoreContext } from '../../context/StoreContext'
 const PlaceOder = () => {

@@ -1,0 +1,50 @@
+.hexagon {
+    width: 220px;
+    height: 190px;
+    
+    clip-path: polygon(
+      25% 0%,   /* Đỉnh trên bên trái */
+      75% 0%,   /* Đỉnh trên bên phải */
+      100% 50%, /* Điểm phải ở giữa */
+      75% 100%, /* Đáy dưới bên phải */
+      25% 100%, /* Đáy dưới bên trái */
+      0% 50%    /* Điểm trái ở giữa */
+    );
+}
+
+.hexagon-l{
+    width: 500px;
+    height: 450px;
+    
+    clip-path: polygon(
+      25% 0%,   /* Đỉnh trên bên trái */
+      75% 0%,   /* Đỉnh trên bên phải */
+      100% 50%, /* Điểm phải ở giữa */
+      75% 100%, /* Đáy dưới bên phải */
+      25% 100%, /* Đáy dưới bên trái */
+      0% 50%    /* Điểm trái ở giữa */
+    );
+}
+
+.hexagon-s{
+    width: 150px;
+    height: 130px;
+    
+    clip-path: polygon(
+      25% 0%,   /* Đỉnh trên bên trái */
+      75% 0%,   /* Đỉnh trên bên phải */
+      100% 50%, /* Điểm phải ở giữa */
+      75% 100%, /* Đáy dưới bên phải */
+      25% 100%, /* Đáy dưới bên trái */
+      0% 50%    /* Điểm trái ở giữa */
+    );
+
+}
+
+.h-500{
+    height: 500px;
+}
+
+.h-700{
+    height: 700px;
+}

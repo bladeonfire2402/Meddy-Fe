@@ -1,7 +1,7 @@
 
 import new1 from '/meddy-assets/news/new1.jpg'
 import new2 from '/meddy-assets/news/new2.jpg'
-import new3 from '/meddy-assets/news/new3.jpg'
+
 import new4 from '/meddy-assets/news/new3.jpg'
 import new5 from '/meddy-assets/news/new5.jpg'
 

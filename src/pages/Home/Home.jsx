@@ -12,7 +12,7 @@ import NewsSection from '../../components/News/News'
 const Home = () => {
   
   return (
-    <div>
+    <div className='Homepage-wrapper'>
       <Header/>
       <DrugByPerson/>
       <HealthScreen/>

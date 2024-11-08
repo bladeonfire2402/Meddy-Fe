@@ -7,8 +7,9 @@ import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer'
 import LoginPopUp from './components/LoginPopUp/LoginPopUp'
 import AboutPages from './pages/About/About'
-import ShopPages from './pages/Shop'
+
 import PrescriptionPage from './pages/Prescription/Perscription'
+import ShopPages from './pages/Shop/ShopPage'
 
 
 
