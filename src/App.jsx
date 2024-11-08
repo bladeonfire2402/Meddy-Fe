@@ -10,6 +10,7 @@ import AboutPages from './pages/About/About'
 
 import PrescriptionPage from './pages/Prescription/Perscription'
 import ShopPages from './pages/Shop/ShopPage'
+import ProfilePage from './pages/Profile/Profile'
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
   return (
     <div>
      {/* ShowLogin? Nếu biến Showlogin là  true thì đoạn mã sau dấu ? sẽ thực hiện */}
-    {showLogin?<LoginPopUp setShowLogin={setShowLogin}/>:<></>}
+    {showLogin?<LoginPopUp  setShowLogin={setShowLogin}/>:<></>}
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
@@ -29,7 +30,7 @@ const App = () => {
           <Route path='/about' element={<AboutPages/>}/>
           <Route path='/shop' element={<ShopPages/>}/>
           <Route path='/prescription' element={<PrescriptionPage/>}/>
-
+          <Route path='/profile'element={<ProfilePage/>}/>
         </Routes>
       </div>
       <Footer />

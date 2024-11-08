@@ -171,6 +171,11 @@ a{
   color: inherit;
 }
 
+.clip-circle {
+  @apply w-32 h-32;
+  clip-path: circle(50%);
+}
+
 
 /**/
 .shadow-fight{

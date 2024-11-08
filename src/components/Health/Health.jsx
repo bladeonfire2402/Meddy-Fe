@@ -1,6 +1,7 @@
 import { DoctorList, MeddyAssetsIllustrator, MedicalTest } from "../../../public/meddy-assets/meddy-assets"
 import CustomSwipper from "../customSwiper/customSwiper"
 import doctorImg from '/meddy-assets/other/doctor.png'
+import doctor1 from '/meddy-assets/doctor/doctor.png'
 
 const HealthScreen = ()=>{
     return(

@@ -29,6 +29,19 @@ import cross2 from '/meddy-assets/illustrator/cross3.png'
 import cross3 from '/meddy-assets/illustrator/cross4.png'
 import heart from '/meddy-assets/illustrator/heart.png'
 import MeddyLogoVer2 from '/meddy-assets/main-assets/Logoweb.png'
+import doctor1 from '/meddy-assets/doctor/doctor.png'
+import doctor2 from '/meddy-assets/doctor/doctor2.png'
+import doctor3 from '/meddy-assets/doctor/doctor3.png'
+import doctor4 from '/meddy-assets/doctor/doctor4.png'
+import doctor5 from '/meddy-assets/doctor/doctor5.png'
+import info from '/meddy-assets/illustrator/info.png'
+import ingridient from '/meddy-assets/illustrator/ingridient.png'
+import usage from '/meddy-assets/illustrator/usage.png'
+import indication from '/meddy-assets/illustrator/indication.png'
+import Contraindications from '/meddy-assets/illustrator/Contraindications.png'
+
+
+
 
 import WaterDropIcon from '@mui/icons-material/WaterDrop';
 import { Person } from '@mui/icons-material';
@@ -129,25 +142,29 @@ export const DoctorList=[
         id:1,
         name:"Phạm Đình Liêm",
         major:"Truyền nhiễm",
-        eductation:"Thạc sĩ"
+        eductation:"Thạc sĩ",
+        img:doctor1
     },
     {
         id:2,
         name:"Nguyễn Đức An",
         major:"Sản phụ khoa",
-        eductation:"Tiến sĩ"
+        eductation:"Tiến sĩ",
+        img:doctor2
     },
     {
         id:3,
         name:"Nguyễn Nhất Minh",
         major:"Tim mạch",
-        eductation:"Giáo sư"
+        eductation:"Giáo sư",
+        img:doctor3
     },
     {
         id:4,
         name:"Đặng Bá Nhất",
         major:"Y học cố truyền",
-        eductation:"Cu Li"
+        eductation:"Thạc sĩ",
+        img:doctor4
     },
 ]
 
@@ -167,7 +184,12 @@ export const MeddyAssetsIllustrator={
     cross1,
     cross2,
     cross3,
-    heart
+    heart,
+    ingridient,
+    indication,
+    usage,
+    Contraindications,
+    info,
 
 }
 

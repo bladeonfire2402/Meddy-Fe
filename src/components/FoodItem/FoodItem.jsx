@@ -3,22 +3,8 @@ import './FoodItem.css';
 import { assets } from '../../../public/assets/assets';
 import { StoreContext } from '../../context/StoreContext'; // Import đúng đường dẫn đến StoreContext
 
-const FoodItem = ({ id, name, price, description, image }) => {
-  
+const FoodItem = ({ id, name, price, description, image }) => {  
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
-
- 
-  const handleAddItem = () => {
-    setItemCount((prev) => prev + 1);
-    addToCart(id);  
-  };
-
-  const handleRemoveItem = () => {
-    if (itemCount > 0) {
-      setItemCount((prev) => Math.max(0, prev - 1));
-      removeFromCart(id);  
-    }
-  };
 
   return (
     <div className='food-item bg-white'>
