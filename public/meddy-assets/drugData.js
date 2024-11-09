@@ -1,9 +1,17 @@
 import Paracetamon from '/meddy-assets/drug/paracetamon.jpg'; // Absolute path
+import Ibuprofen from '/meddy-assets/drug/Ibuprofen.jpg'; // Absolute path
+import Ketoconazole from '/meddy-assets/drug/Ketoconazole.png'; // Absolute path
+import Amlodipine from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
+import Metformin from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
+import Omeprazole from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
+import Cetirizine from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
+
+
 
 export const Medicines = [
   {
     Med_ID: "MED001",
-    Name: "Viên nén giảm đau hạ sốt Paracetamol 500mg",
+    Name: "Viên nén  Paracetamol 500mg",
     Med_Categories: "Thuốc hô hấp",
     Med_type: "Viên nén bao phim",
     TRN: "VN-12345-ABC",
@@ -39,7 +47,7 @@ export const Medicines = [
     ExpDate: new Date("2027-02-10"),
     MfgDate: new Date("2025-02-10"),
     Prescription_drug: false,
-    img: "https://example.com/images/ibuprofen.jpg"
+    img:Ibuprofen
   },
   {
     Med_ID: "MED003",
@@ -59,7 +67,7 @@ export const Medicines = [
     ExpDate: new Date("2026-11-15"),
     MfgDate: new Date("2024-11-15"),
     Prescription_drug: true,
-    img: "https://example.com/images/ketoconazole_cream.jpg"
+    img:Ketoconazole
   },
   {
     Med_ID: "MED004",
@@ -79,7 +87,7 @@ export const Medicines = [
     ExpDate: new Date("2026-08-01"),
     MfgDate: new Date("2024-08-01"),
     Prescription_drug: true,
-    img: "https://example.com/images/amlodipine.jpg"
+    img: Amlodipine
   },
   {
     Med_ID: "MED005",
@@ -99,7 +107,7 @@ export const Medicines = [
     ExpDate: new Date("2026-12-01"),
     MfgDate: new Date("2024-12-01"),
     Prescription_drug: false,
-    img: "https://example.com/images/cetirizine.jpg"
+    img: Cetirizine
   },
   {
     Med_ID: "MED006",
@@ -119,7 +127,7 @@ export const Medicines = [
     ExpDate: new Date("2027-01-10"),
     MfgDate: new Date("2025-01-10"),
     Prescription_drug: true,
-    img: "https://example.com/images/omeprazole.jpg"
+    img: Omeprazole
   },
   {
     Med_ID: "MED007",
@@ -139,6 +147,6 @@ export const Medicines = [
     ExpDate: new Date("2026-09-15"),
     MfgDate: new Date("2024-09-15"),
     Prescription_drug: true,
-    img: "https://example.com/images/metformin.jpg"
+    img: Metformin
   }
 ];

@@ -17,7 +17,7 @@ const Navbar = ({setShowLogin}) => {
         <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Trang chủ</Link>
         <Link to="/about" onClick={()=>setMenu("about")} className={menu==="about"?"active":""}>Về Meddy</Link>
         <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"active":""}>Sản phẩm</Link>
-        <Link to="/prescription" onClick={()=>{setMenu("")}} className={menu===""?"active":""}>Đơn thuốc</Link>
+        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"active":""}>Tư vấn</Link>
         <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</a>
         <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Liên hệ </a>
       </div>

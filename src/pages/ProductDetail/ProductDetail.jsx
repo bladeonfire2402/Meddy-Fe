@@ -1,20 +1,25 @@
 import { Person } from "@mui/icons-material"
-import { Medicines } from "../../../public/meddy-assets/drugData"
 import { ConvertPrice } from "../../func/converPrice"
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import GradeIcon from '@mui/icons-material/Grade';
 import AssignmentReturnIcon from '@mui/icons-material/AssignmentReturn';
 import SafetyCheckIcon from '@mui/icons-material/SafetyCheck';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { MeddyAssetsIllustrator } from "../../../public/meddy-assets/meddy-assets";
+import { useParams } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
 
 
 
 const ProducDetail=()=>{
     const [focus,setFocus]=useState("Thành phần")
-    const testItem=Medicines[0]
-    console.log(testItem.Prescription_drug)
+    const { id } = useParams(); // `id` will be the Med_ID passed from the URL
+    const { Medicines } = useContext(StoreContext); // Assuming medicines are available in the StoreContext
 
+    // Find the specific medicine by Med_ID
+    const testItem = Medicines.find(med => med.Med_ID === id);
+
+    if (!testItem) return <p>Medicine not found</p>;
     const HandlerFocus=(focus)=>{
         if(focus==="Thành phần"){
             return(
@@ -32,7 +37,7 @@ const ProducDetail=()=>{
             return(
                 <div>
                     <div className="flex items-center gap-2 mt-3">
-                        <img src={MeddyAssetsIllustrator.usage} className="size-8"/>
+                       <img src={MeddyAssetsIllustrator.usage} className="size-8"/>
                        <h1 className="text-3xl text-blue-500">Công dụng của {testItem.Name} có gì</h1>
                     </div>
                     <p className="mt-4 text-xl">Công dụng chủ yếu là : {testItem.Usage}</p>
@@ -78,7 +83,6 @@ const ProducDetail=()=>{
         }
         
     }
-
     return(
         <div className="Product-details bg-slate-100 flex justify-center py-7 flex-col items-center gap-5">
             <div className="wrapper gap-3 px-9 py-10 flex bg-white rounded-md shadow-sm">
@@ -161,9 +165,7 @@ const ProducDetail=()=>{
                    </div>
                 </div>
             </div>
-
         </div>
-
     )
 }
 export default ProducDetail

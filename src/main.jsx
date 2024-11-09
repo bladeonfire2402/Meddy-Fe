@@ -6,11 +6,13 @@ import { BrowserRouter } from 'react-router-dom';
 import StoreContextProvider from './context/StoreContext.jsx';
 import ProducDetail from './pages/ProductDetail/ProductDetail.jsx';
 import ProfilePage from './pages/Profile/Profile.jsx';
+import TestPage from './pages/Test/Test.jsx';
+import ContextProvider from './features/ContextProvider.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <StoreContextProvider>
-      <ProducDetail/>
+      <App/>
     </StoreContextProvider>
   </BrowserRouter>
 );

@@ -11,6 +11,7 @@ import AboutPages from './pages/About/About'
 import PrescriptionPage from './pages/Prescription/Perscription'
 import ShopPages from './pages/Shop/ShopPage'
 import ProfilePage from './pages/Profile/Profile'
+import ProducDetail from './pages/ProductDetail/ProductDetail'
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path='/shop' element={<ShopPages/>}/>
           <Route path='/prescription' element={<PrescriptionPage/>}/>
           <Route path='/profile'element={<ProfilePage/>}/>
+          <Route path="/product/:id" element={<ProducDetail />} />
         </Routes>
       </div>
       <Footer />

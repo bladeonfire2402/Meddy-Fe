@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
 import { food_list } from "../../public/assets/assets";
+import { Medicines } from "../../public/meddy-assets/drugData";
 
 export const StoreContext = createContext(null)
 
-const StoreContextProvider = (props) => {
+const StoreContextProvider = ({children}) => {
 
     const [cartItems, setCartItems] = useState({});
 
@@ -25,14 +26,15 @@ const StoreContextProvider = (props) => {
         for(const item in cartItems)
         {
             if(cartItems[item]>0){
-                let itemInfo = food_list.find((product)=>product._id===item)
-                totalAmount += itemInfo.price*cartItems[item];
+                let itemInfo = Medicines.find((product)=>product.Med_ID===item)
+                totalAmount += itemInfo.Price*cartItems[item];
             }
         } 
         return totalAmount;
     }
 
     const contextValue = {
+        Medicines,
         food_list,
         cartItems,
         setCartItems,
@@ -43,7 +45,7 @@ const StoreContextProvider = (props) => {
 
     return (
         <StoreContext.Provider value={contextValue}>
-            {props.children}
+            {children}
         </StoreContext.Provider>
     )
 }

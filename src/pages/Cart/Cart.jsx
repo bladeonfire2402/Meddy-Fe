@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
+  const { cartItems, Medicines,food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
 
   const navigate = useNavigate();
   
@@ -39,17 +39,17 @@ const Cart = () => {
           <p>Total</p>
           <p>Remove</p>
         </div>
-        {food_list.map((item) => {
-          if (cartItems[item._id] > 0) {
+        {Medicines.map((item) => {
+          if (cartItems[item.Med_ID] > 0) {
             return (
               <div key={item._id}>
                 <div className='cart-items-item'>
-                  <img src={item.image} alt={item.name} />
-                  <p>{item.name}</p>
-                  <p>${item.price}</p>
-                  <p>{cartItems[item._id]}</p>
-                  <p>${item.price * cartItems[item._id]}</p>
-                  <p onClick={() => removeFromCart(item._id)} className='cross'>X</p>
+                  <img src={item.img} alt={item.Name} />
+                  <p>{item.Name}</p>
+                  <p>${item.Price}</p>
+                  <p>{cartItems[item.Med_ID]}</p>
+                  <p>${item.Price * cartItems[item.Med_ID]}</p>
+                  <p onClick={() => removeFromCart(item.Med_ID)} className='cross'>X</p>
                 </div>
                 <hr />
               </div>
@@ -69,12 +69,12 @@ const Cart = () => {
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>${getTotalCartAmount()===0?0:2}</p>
+              <p>${getTotalCartAmount()===0?0:2000} VND</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${getTotalCartAmount()===0?0:getTotalCartAmount() + 2}</b> 
+              <b>{getTotalCartAmount()===0?0:getTotalCartAmount() + 2000} VND</b> 
             </div>
           </div>
           <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
