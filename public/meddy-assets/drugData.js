@@ -2,11 +2,9 @@ import Paracetamon from '/meddy-assets/drug/paracetamon.jpg'; // Absolute path
 import Ibuprofen from '/meddy-assets/drug/Ibuprofen.jpg'; // Absolute path
 import Ketoconazole from '/meddy-assets/drug/Ketoconazole.png'; // Absolute path
 import Amlodipine from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
-import Metformin from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
-import Omeprazole from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
-import Cetirizine from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
-
-
+import Metformin from '/meddy-assets/drug/Metformin.jpg'; // Absolute path
+import Omeprazole from '/meddy-assets/drug/Omeprazole.jpg'; // Absolute path
+import Cetirizine from '/meddy-assets/drug/Cetirizine.jpg'; // Absolute path
 
 export const Medicines = [
   {

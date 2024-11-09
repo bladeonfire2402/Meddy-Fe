@@ -12,6 +12,7 @@ import PrescriptionPage from './pages/Prescription/Perscription'
 import ShopPages from './pages/Shop/ShopPage'
 import ProfilePage from './pages/Profile/Profile'
 import ProducDetail from './pages/ProductDetail/ProductDetail'
+import NewsPage from './pages/News/NewsPages'
 
 
 
@@ -25,14 +26,15 @@ const App = () => {
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<PlaceOder />} />
           <Route path='/about' element={<AboutPages/>}/>
           <Route path='/shop' element={<ShopPages/>}/>
           <Route path='/prescription' element={<PrescriptionPage/>}/>
           <Route path='/profile'element={<ProfilePage/>}/>
-          <Route path="/product/:id" element={<ProducDetail />} />
+          <Route path="/product/:id" element={<ProducDetail/>} />
+          <Route path='/news' element={<NewsPage/>}/>
         </Routes>
       </div>
       <Footer />

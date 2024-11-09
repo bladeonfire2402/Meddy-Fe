@@ -85,9 +85,9 @@ const ProducDetail=()=>{
     }
     return(
         <div className="Product-details bg-slate-100 flex justify-center py-7 flex-col items-center gap-5">
-            <div className="wrapper gap-3 px-9 py-10 flex bg-white rounded-md shadow-sm">
+            <div className="wrapper gap-7 px-9 py-10 flex bg-white rounded-md shadow-sm">
                 <div className="w-2/5">
-                   <img className="object-fill" src={testItem.img}/>
+                   <img className="object-fill w-full" src={testItem.img}/>
                 </div>
                 <div className="w-3/5">
                    <div className="flex items-center gap-2 "><h3>Thương hiệu</h3><h3 className="text-primary">Agimexpharm</h3></div>

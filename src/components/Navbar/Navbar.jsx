@@ -7,23 +7,22 @@ import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({setShowLogin}) => {
     const[menu,setMenu] = useState("home");
-  
     const{getTotalCartAmount} = useContext(StoreContext);
+
+
     return (
     <div className='flex justify-center shadow-md'>
     <div className='navbar wrapper'>
       <Link to='/'><img src={Logo} alt="" className="logo" /></Link>    
       <div className="navbar-menu text-primary">
-        <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Trang chủ</Link>
-        <Link to="/about" onClick={()=>setMenu("about")} className={menu==="about"?"active":""}>Về Meddy</Link>
-        <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"active":""}>Sản phẩm</Link>
-        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"active":""}>Tư vấn</Link>
-        <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</a>
-        <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Liên hệ </a>
+        <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"":""}>Trang chủ</Link>
+        <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"":""}>Mua thuốc</Link>
+        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Tư vấn</Link>
+        <Link to="/news" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Tin tức</Link>
+        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Liên hệ</Link>
       </div>
       
       <div className="navbar-right">
-       
         <div className="navbar-search-icon">
             <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
             <div className={getTotalCartAmount()===0?"":"dot"}></div>

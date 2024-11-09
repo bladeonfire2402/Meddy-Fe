@@ -49,7 +49,7 @@ const Speacial=()=>{
                      <HeadLineText text={"Sản phẩm nổi bật"}/>    
                      </div>
                   </div>
-                     <DrugDisplay category={category}/>
+                     <DrugDisplay/>
                   </div>
                  <div>
                </div>

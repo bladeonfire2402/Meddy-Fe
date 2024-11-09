@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-  const { cartItems, Medicines,food_list, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
+  const { cartItems, Medicines, removeFromCart, getTotalCartAmount } = useContext(StoreContext);
 
   const navigate = useNavigate();
   
@@ -12,7 +12,7 @@ const Cart = () => {
   
 
   if (totalPrice<=0) {
-    return <div className='flex justify-center'>
+    return <div className='flex justify-center pb-16 '>
       <div className='wrapper flex justify-center flex-col items-center'>
         <img src='https://nhathuoclongchau.com.vn/estore-images/cart/illustration-cart-empty.png' className='w-1/3'/>
         <h1 className='font-semibold text-xl'>Chưa có sản phẩm nào trong giỏ hàng</h1>
@@ -26,9 +26,8 @@ const Cart = () => {
       </div>
     </div>;
   }
-
   return (
-    <div className='cart flex justify-center'>
+    <div className='cart flex justify-center py-32'>
       <div className='wrapper'>
       <div className="cart-items">
         <div className="cart-items-title">

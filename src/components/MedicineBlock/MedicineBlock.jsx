@@ -6,6 +6,7 @@ import './index.css'
 import { useNavigate } from "react-router-dom";
 
 
+
 const MedicineBlock=({medicine})=>{
     const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
     const navigate = useNavigate();

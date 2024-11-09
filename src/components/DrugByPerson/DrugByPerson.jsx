@@ -6,6 +6,7 @@ import ProductLine from '../Product-Line/ProductLine';
 import Doctorimg from '/public/meddy-assets/other/doctor2.png'
 import { food_list } from '../../../public/assets/assets';
 import { MeddyAssetsIllustrator } from '../../../public/meddy-assets/meddy-assets';
+import DrugDisplay from '../DrugDisplay/DrugDisplay';
 
 function DrugByPerson() {    // Trạng thái lỗi
   const [person,setPerson]=useState('Nam giới')
@@ -35,8 +36,8 @@ function DrugByPerson() {    // Trạng thái lỗi
                 ))}
             </div>
         </div>
-        <div className='wrapper'>
-              <ProductLine item={ProductMoi}/>
+        <div className='wrapper px-6 pb-6 rounded-md bg-blue-50 mt-4'>
+              <DrugDisplay/>
         </div>
         <div className='absolute size-16 top-2 rotate-12 right-6'><img src={MeddyAssetsIllustrator.cross}/></div>
         <div className='absolute size-7 top-24 rotate-12 right-3'><img src={MeddyAssetsIllustrator.cross}/></div>
