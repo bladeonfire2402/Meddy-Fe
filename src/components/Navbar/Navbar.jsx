@@ -1,38 +1,43 @@
-import { useContext, useState } from 'react'
-import './Navbar.css'
-import { assets } from '../../../public/assets/assets'
-import Logo from '/meddy-assets/main-assets/logo.png'
+import { useContext, useState } from 'react';
+import './Navbar.css';
+import { assets } from '../../../public/assets/assets';
+import Logo from '/meddy-assets/main-assets/logo.png';
 import { Link } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
-
-const Navbar = ({setShowLogin}) => {
-    const[menu,setMenu] = useState("home");
-    const{getTotalCartAmount} = useContext(StoreContext);
+import { TbChristmasBall } from "react-icons/tb";
+import { ChristmastContext } from '../../App';
 
 
-    return (
+const Navbar = ({ setShowLogin }) => {
+  const [menu, setMenu] = useState("home");
+  const { getTotalCartAmount } = useContext(StoreContext);
+  const { christTheme,toggleChristmasTheme }=useContext(ChristmastContext)
+  console.log(christTheme)
+
+  return (
     <div className='flex justify-center shadow-md'>
-    <div className='navbar wrapper'>
-      <Link to='/'><img src={Logo} alt="" className="logo" /></Link>    
-      <div className="navbar-menu text-primary">
-        <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"":""}>Trang chủ</Link>
-        <Link to="/shop" onClick={()=>setMenu("shop")} className={menu==="shop"?"":""}>Mua thuốc</Link>
-        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Tư vấn</Link>
-        <Link to="/news" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Tin tức</Link>
-        <Link to="/prescription" onClick={()=>{setMenu("Tư vấn")}} className={menu==="Tư vấn"?"":""}>Liên hệ</Link>
-      </div>
-      
-      <div className="navbar-right">
-        <div className="navbar-search-icon">
-            <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
-            <div className={getTotalCartAmount()===0?"":"dot"}></div>
+      <div className='navbar wrapper'>
+        <Link to='/'><img src={Logo} alt="Logo" className="logo" /></Link>
+        <div className="navbar-menu text-primary">
+          <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "" : ""}>Trang chủ</Link>
+          <Link to="/shop" onClick={() => setMenu("shop")} className={menu === "shop" ? "" : ""}>Mua thuốc</Link>
+          <Link to="/prescription" onClick={() => setMenu("Tư vấn")} className={menu === "Tư vấn" ? "" : ""}>Tư vấn</Link>
+          <Link to="/news" onClick={() => setMenu("Tin tức")} className={menu === "Tin tức" ? "" : ""}>Tin tức</Link>
+          <Link to="/contact" onClick={() => setMenu("Liên hệ")} className={menu === "Liên hệ" ? "" : ""}>Liên hệ</Link>
         </div>
-        <button onClick={()=>setShowLogin(true)}>Sign In</button>
+        <div className="navbar-right items-center">
+          <div className={christTheme===true?"text-primary":""}>
+            <TbChristmasBall size={36} onClick={()=>{toggleChristmasTheme()}} /> {/* Toggle theme on click */}
+          </div>
+          <div className="navbar-search-icon">
+            <Link to='/cart'><img src={assets.basket_icon} alt="Cart" /></Link>
+            <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
+          </div>
+          <button onClick={() => setShowLogin(true)}>Sign In</button>
+        </div>
       </div>
-    </div>        
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;

@@ -11,9 +11,6 @@ import DrugDisplay from '../DrugDisplay/DrugDisplay';
 function DrugByPerson() {    // Trạng thái lỗi
   const [person,setPerson]=useState('Nam giới')
   const PersonList=["Nam giới","Trẻ em","Mẹ và bé","Người bị tiểu đường"]
-  
-  
-  const ProductMoi=food_list.slice(0,10)
 
   return (
     <div className='flex justify-center flex-col  items-center py-10 relative'>

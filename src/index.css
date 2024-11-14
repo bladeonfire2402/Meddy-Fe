@@ -137,6 +137,10 @@ background: linear-gradient(90deg, rgba(0,74,255,1) 0%, rgba(172,220,233,1) 100%
   border-bottom: 50px solid #4CAF50; /* Màu của tam giác */
 }
 
+.circle{
+  clip-path: circle(50%);
+}
+
 
 /* Class về độ rộng responsive */
 .wrapper{
@@ -189,3 +193,33 @@ a{
     opacity: 1;
   }
 }
+
+
+/*Snow drop animation*/
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url('/meddy-assets/snowflake.png');
+  background-size: cover;
+  animation: animationSnow 4s ease-in-out infinite;
+  animation-duration: 1s;
+}
+
+@keyframes animationSnow {
+  0% {
+      transform: translate(0, 0);
+      opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: translate(100px, 500px);
+  }
+}
+

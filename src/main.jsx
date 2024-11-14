@@ -1,18 +1,17 @@
-
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import StoreContextProvider from './context/StoreContext.jsx';
-import ProducDetail from './pages/ProductDetail/ProductDetail.jsx';
-import ProfilePage from './pages/Profile/Profile.jsx';
-import TestPage from './pages/Test/Test.jsx';
-import ContextProvider from './features/ContextProvider.jsx';
+import { ThemeProvider } from '@emotion/react';
+
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <StoreContextProvider>
-      <App/>
+      <ThemeProvider theme={{}}> {/* Empty object as theme */}
+        <App />
+      </ThemeProvider>
     </StoreContextProvider>
   </BrowserRouter>
 );

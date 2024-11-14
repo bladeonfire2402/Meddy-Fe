@@ -5,11 +5,7 @@ import { StoreContext } from '../../context/StoreContext';
 import MedicineBlock from '../MedicineBlock/MedicineBlock';
 
 const DrugDisplay = ({ category }) => {
-
-
   const {Medicines}=useContext(StoreContext)
-
-
   return (
     <div className='food-display' id='food-display'>
       <div className='food-display-list'>

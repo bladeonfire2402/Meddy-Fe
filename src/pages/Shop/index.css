@@ -1,0 +1,17 @@
+.bg-christmas {
+    background-image: url('/meddy-assets/background/2115.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the background image cover the entire area */
+    background-position: center; /* Centers the background image */
+    background-attachment:fixed;    
+}
+.drug-content{
+    width: 75%;
+}
+
+.drug-filter-price-unit{
+    width: 24%;
+}
+
+
+

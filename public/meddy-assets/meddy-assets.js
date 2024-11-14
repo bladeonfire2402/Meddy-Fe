@@ -39,6 +39,15 @@ import ingridient from '/meddy-assets/illustrator/ingridient.png'
 import usage from '/meddy-assets/illustrator/usage.png'
 import indication from '/meddy-assets/illustrator/indication.png'
 import Contraindications from '/meddy-assets/illustrator/Contraindications.png'
+import Paracetamon from '/meddy-assets/drug/paracetamon.jpg'; // Absolute path
+import Ibuprofen from '/meddy-assets/drug/Ibuprofen.jpg'; // Absolute path
+import Ketoconazole from '/meddy-assets/drug/Ketoconazole.png'; // Absolute path
+import Amlodipine from '/meddy-assets/drug/Amlodipine.png'; // Absolute path
+import Metformin from '/meddy-assets/drug/Metformin.jpg'; // Absolute path
+import Omeprazole from '/meddy-assets/drug/Omeprazole.jpg'; // Absolute path
+import Cetirizine from '/meddy-assets/drug/Cetirizine.jpg'; // Absolute path
+
+
 
 
 
@@ -208,3 +217,38 @@ export const MedicalTest=[
     },
 
 ]
+
+export const MedicineType = [
+    {
+        type: "Thuốc dị ứng",
+        img: Paracetamon
+    },
+    {
+        type: "Thuốc da liễu",
+        img: Ibuprofen
+    },
+    {
+        type: "Thuốc ung thư",
+        img: Ketoconazole
+    },
+    {
+        type: "Thuốc hệ thần kinh",
+        img: Amlodipine
+    },
+    {
+        type: "Thuốc hô hấp",
+        img: Metformin
+    },
+    {
+        type: "Thuốc tiêu hóa - gan mật",
+        img: Omeprazole
+    },
+    {
+        type: "Thuốc tai mũi họng",
+        img: Cetirizine
+    },
+    {
+        type: "Thuốc tim mạch",
+        img: Paracetamon
+    }
+];
