@@ -13,6 +13,8 @@ import ShopPages from './pages/Shop/ShopPage'
 import ProfilePage from './pages/Profile/Profile'
 import ProducDetail from './pages/ProductDetail/ProductDetail'
 import NewsPage from './pages/News/NewsPages'
+import { ContactPage } from '@mui/icons-material'
+import Contactpage from './pages/Contact/Contact'
 
 export const ChristmastContext=createContext()
 
@@ -41,6 +43,8 @@ const App = () => {
           <Route path='/profile'element={<ProfilePage/>}/>
           <Route path="/product/:id" element={<ProducDetail/>} />
           <Route path='/news' element={<NewsPage/>}/>
+          <Route path='/news/:id'/>
+          <Route path='/contact' element={<Contactpage/>}/>
         </Routes>
       </div>
       <Footer />

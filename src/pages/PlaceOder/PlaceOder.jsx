@@ -6,7 +6,8 @@ const PlaceOder = () => {
    const {getTotalCartAmount} = useContext(StoreContext);
 
   return (
-    <form className='place-order'>
+    <div className='flex justify-center py-10'>
+    <form className='place-order wrapper'>
       <div className="place-order-left">
          <p className="title">Delivery Information</p>
       <div className="multi-fields">
@@ -44,11 +45,12 @@ const PlaceOder = () => {
               <b>${getTotalCartAmount()===0?0:getTotalCartAmount() + 2}</b> 
             </div>
           </div>
-          <button>PROCEED TO PAYMENT</button>
+          <button className='uppercase'>Thanh toán ngay</button>
         </div>
       </div>
       
     </form>
+    </div>
   )
 }
 

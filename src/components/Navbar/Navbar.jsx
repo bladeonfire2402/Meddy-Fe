@@ -26,7 +26,7 @@ const Navbar = ({ setShowLogin }) => {
           <Link to="/contact" onClick={() => setMenu("Liên hệ")} className={menu === "Liên hệ" ? "" : ""}>Liên hệ</Link>
         </div>
         <div className="navbar-right items-center">
-          <div className={christTheme===true?"text-primary":""}>
+          <div className={christTheme===true?"text-primary":"grey-img"}>
             <TbChristmasBall size={36} onClick={()=>{toggleChristmasTheme()}} /> {/* Toggle theme on click */}
           </div>
           <div className="navbar-search-icon">

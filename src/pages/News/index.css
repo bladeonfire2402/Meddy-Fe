@@ -1,0 +1,23 @@
+.news-section-pro{
+
+}
+
+.news-section-pro .item1{
+    transform: translateX(-200px);
+}
+
+.news-section-pro .item2{
+    transform: translateX(-300px);
+}
+
+.news-section-pro .item3{
+    transform: translateX(-250px);
+}
+
+.news-section-pro .item4{
+    transform: translateX(200px);
+}
+
+.news-section-pro .item5{
+    transform: translateX(175px);
+}

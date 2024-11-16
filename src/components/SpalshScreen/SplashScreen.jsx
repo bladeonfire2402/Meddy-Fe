@@ -1,6 +1,8 @@
+import './index.css'
+
 const SplashScreen = () => {
     return (
-        <div className="splashscreen-wrapper absolute top-0 w-full left-0 bg-primary h-full flex flex-col items-center">
+        <div className="splashscreen-wrapper  top-0 w-full left-0 bg-primary h-full flex flex-col items-center">
             <div className="size-48 circle overflow-hidden mt-44">
             <iframe 
                 src="https://giphy.com/embed/SVNj1XrCTzafoQwQai" 
@@ -12,7 +14,7 @@ const SplashScreen = () => {
                 allowFullScreen
             ></iframe>
             </div>
-            <div className="mt-8 text-3xl font-semibold text-white">Đổi giao diện...</div>
+            <div className="motion-preset-stretch mt-8 text-3xl font-semibold text-white">Đổi giao diện...</div>
         </div>
     );
 };

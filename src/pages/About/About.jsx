@@ -3,7 +3,6 @@ import './About.css'
 const AboutPages = () => {
     return(
         <div className="AboutPage-page">
-            
             <div className='bg-primary  w-full h-700 relative'>
                 <div className='hexagon-l absolute  top-24 left-96 bg-pastel-blue rotate-90 opacity-65 z-50'></div>
                 <div className='absolute top-16 left-48'>

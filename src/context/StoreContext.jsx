@@ -5,7 +5,6 @@ import { Medicines } from "../../public/meddy-assets/drugData";
 export const StoreContext = createContext(null)
 
 const StoreContextProvider = ({children}) => {
-
     const [cartItems, setCartItems] = useState({});
 
     const addToCart = (itemId) => {

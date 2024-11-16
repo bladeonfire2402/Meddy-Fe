@@ -5,11 +5,13 @@
     align-items: center;
 }
 
-
-
 .navbar .logo{
     width: 150px;
 
+}
+
+.grey-img{
+    color: #49557e;
 }
 
 .navbar-menu{
