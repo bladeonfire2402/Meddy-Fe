@@ -42,7 +42,7 @@ const NewsPage=()=>{
                 </div>
                 {/*Tin tức đầu tiên nổi bật nhất*/}
                 <div className="flex items-center gap-12 mt-7">
-                    <img className="rounded w-5/12 h-64" src={firstNew.imageUrl} alt=""/>
+                    <img className="rounded w-5/12 h-72" src={firstNew.imageUrl} alt=""/>
                     <div className="w-1/2 flex flex-col gap-4">
                         <h1 className="text-3xl font-bold w-11/12 text-primary">{firstNew.title}</h1>
                         <p className="">{TrundeText200(firstNew.content)}</p>

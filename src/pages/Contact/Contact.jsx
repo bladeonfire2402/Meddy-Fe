@@ -22,7 +22,7 @@ const ContactPage = ({ map }) => {
                     title="Google Maps Embed"
                     src={mapSrc}
                     width="100%"
-                    height="450"
+                    height="400"
                     style={{ border: "0" }}
                     allowFullScreen
                     loading="lazy"

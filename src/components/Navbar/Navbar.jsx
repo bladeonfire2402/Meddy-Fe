@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import './Navbar.css';
 import { assets } from '../../../public/assets/assets';
 import Logo from '/meddy-assets/main-assets/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 import { TbChristmasBall } from "react-icons/tb";
 import { ChristmastContext } from '../../App';
@@ -12,8 +12,10 @@ const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const { getTotalCartAmount } = useContext(StoreContext);
   const { christTheme,toggleChristmasTheme }=useContext(ChristmastContext)
-  console.log(christTheme)
-
+  const navigate = useNavigate()
+  {/*Token để đăng nhập tạm*/}
+  const [token,setToken]=useState(true)
+  
   return (
     <div className='flex justify-center shadow-md'>
       <div className='navbar wrapper'>
@@ -33,7 +35,19 @@ const Navbar = ({ setShowLogin }) => {
             <Link to='/cart'><img src={assets.basket_icon} alt="Cart" /></Link>
             <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
           </div>
-          <button onClick={() => setShowLogin(true)}>Sign In</button>
+          {!token ? (
+             <button onClick={() => setShowLogin(true)}>Sign In</button>
+          )
+          :
+          (
+            <div className='navbar-profile' onClick={()=>navigate("/profile")}>
+              <img src={assets.profile_icon} alt="" />
+              <ul className="nav-profile-dropdown">
+              <hr />
+            </ul> 
+            </div>
+          ) 
+          }
         </div>
       </div>
     </div>
